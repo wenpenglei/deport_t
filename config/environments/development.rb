@@ -6,6 +6,7 @@
 # We make no guarantees that this code is fit for any purpose. 
 # Visit http://www.pragmaticprogrammer.com/titles/rails32 for more book information.
 #---
+$CLICKS = 1
 Depot::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb
 

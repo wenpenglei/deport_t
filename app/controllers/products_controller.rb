@@ -10,6 +10,7 @@ class ProductsController < ApplicationController
   # GET /products
   # GET /products.json
   def index
+  $CLICKS += 1
     @products = Product.all
 
     respond_to do |format|

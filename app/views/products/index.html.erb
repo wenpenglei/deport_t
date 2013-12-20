@@ -5,8 +5,9 @@
   <tr class="<%= cycle('list_line_odd', 'list_line_even') %>">
 
     <td>
-  <%= link_to 'Show', product %>
-      <%= image_tag(product.image_url, class: 'list_image') %>
+      <a target=" " href= "/en/products/<%= product.id %>" >
+        <%= image_tag(product.image_url, class: 'list_image') %>
+      </a>
     </td>
 
     <td class="list_description">
@@ -16,7 +17,6 @@
                length: 80) %></dd>
       </dl>
     </td>
-
     <td class="list_actions">
       <%= link_to 'Show', product %><br/>
       <%= link_to 'Edit', edit_product_path(product) %><br/>
@@ -26,7 +26,8 @@
   </tr>
 <% end %>
 </table>
-
+<br />
+<p>count: <%= $CLICKS %>次 </P>
 <br />
 
 <%= link_to 'New product', new_product_path %>
